@@ -1,0 +1,119 @@
+*{
+
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.logo{
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.container-input{
+    max-width: 700px;
+    margin: 14px 0;
+
+
+}
+
+.container-input span{
+    color: black;
+    font-size: 22px;
+
+
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 10px;
+    background: #dfdfdf;;
+    height: 18px;
+    outline: none;
+    margin-top: 15px;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: green;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.container-passoword{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.passoword{
+    height: 60px;
+    background-color: black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dfdfdf;
+    border: 1px;
+    transition: transform 0.5s;
+}
+
+.passoword:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: black;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.hide{
+    display: none;
+}
+
+.container-passoword:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
